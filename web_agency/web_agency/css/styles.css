@@ -1,0 +1,530 @@
+/* GLOBAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* FIN GLOBAL SETTINGS */
+
+/* ----------------------------------------- */
+
+/* CLEARFIX TRICK */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* FIN CLEARFIX */
+
+/* ----------------------------------------- */
+
+/* HEADER */
+
+header {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 82px;
+    flex-wrap: wrap;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 auto;
+}
+
+#menu li {
+    padding: 30px 10px;
+}
+
+.hover-top:hover {
+    border-top: 5px solid deepskyblue;
+    transition: 0.4s;
+}
+
+.hover-top.active {
+    border-top: 5px solid deepskyblue;
+    transition: 0.4s;
+}
+
+/* FIN HEADER */
+
+/* ----------------------------------------- */
+
+/* SLIDER */
+
+.slider {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 700px;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.slider-text {
+    position: absolute;
+    top: 255px;
+    left: 200px;
+    color: white;
+}
+
+.aqua {
+    color: #10d0ff;
+}
+
+#fleche {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 52%;
+}
+
+#left {
+    padding: 20px 10px 20px 10px;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    border-radius: 0 30px 30px 0;
+}
+
+#right {
+    padding: 20px 10px 20px 10px;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    border-radius: 30px 0 0 30px;
+}
+
+#left:hover,
+#right:hover {
+    color: #31bfd8;
+    cursor: pointer;
+}
+
+.infos {
+    cursor: pointer;
+    background-color: #31bfd8;
+    color: white;
+    position: absolute;
+    border: none;
+    top: 120px;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+/* FIN SLIDER */
+
+/* ----------------------------------------- */
+
+/* SERVICES */
+
+i.margin {
+    box-shadow: none;
+}
+
+#no-style {
+    list-style: none;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+main > section > div > ul > li {
+    padding: 30px;
+}
+
+#inline-vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    width: 85%;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 2px;
+    border: 1px solid lightgrey;
+
+}
+
+
+.delta {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.fa {
+    display: inline-block;
+    border-radius: 90px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-right: -17px;
+
+}
+
+.fa-circle {
+    text-shadow: -5px 0 white, 0 5px white,
+    5px 0 white, 0 -5px white;
+}
+
+i {
+    color: deepskyblue;
+}
+
+.centered {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-centered {
+    display: inline-block;
+}
+
+/* FIN SERVICES */
+
+/* ----------------------------------------- */
+
+/* PROJETS */
+
+#projets {
+    background-color: #F5F5F5;
+}
+
+#projets .presentation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+#projets .presentation li {
+    background-color: #E5E5E5;
+    padding: 10px;
+    margin-left: 0;
+}
+
+#projets .presentation li:hover {
+    background-color: #3BAED7;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 3px 0 #1D8DB5;
+    cursor: pointer;
+}
+
+#projets .presentation li:hover > span {
+    width: 1px;
+    height: 1px;
+    border: 8px solid transparent;
+    border-top: 8px solid #1D8DB5;
+    position: relative;
+    top: 38px;
+    right: 30px;
+}
+
+#projets .presentation li:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+#projets .presentation li:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+figure {
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    opacity: 0;
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    transition: opacity 0.5s;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fa-eye {
+    color: white;
+    background-color: rgba(92, 173, 211, 1);
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px white solid;
+    position: absolute;
+    right: 5px;
+    top: -15px;
+}
+
+
+.flex-container {
+    resize: horizontal;
+    overflow: hidden;
+    display: flex;
+    margin: 1em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-container figure {
+    flex-basis: calc(25% - 2em);
+    margin: 1em;
+}
+
+/* FIN PROJETS */
+
+/* ----------------------------------------- */
+
+/* CONTACT */
+
+#formulaire {
+    background-color: #CECECE;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 15% 0 65%;
+    position: relative;
+}
+
+.centrale {
+    padding-top: 10%;
+    opacity: 0.9;
+}
+
+.map-responsive iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: deepskyblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* FIN CONTACT */
+
+/* ----------------------------------------- */
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .flex-container figure {
+        flex-basis: calc(33% - 2em);
+    }
+    
+    #formulaire {
+        margin: 25% 5% 5% 25%;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 900px) {
+    .flex-container figure {
+        flex-basis: calc(50% - 2em);
+    }
+    
+    .icon-centered {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    #formulaire {
+        margin: 25% 5% 5% 15%;
+    }
+    
+}
+
+@media screen and (min-width: 200px) and (max-width: 660px) {
+
+    /* ----------------------------------------- */
+    /* RESPONSIVE HEADER */
+    header {
+        position: fixed;
+        overflow: hidden;
+        width: 100%;
+        z-index: 1;
+    }
+
+    header nav {
+        padding-top: 20px;
+    }
+
+    .hover-top:hover {
+        border-top: none;
+    }
+
+    .hover-top.active {
+        border-top: none
+    }
+
+    .hover-top {
+        padding: 15px;
+        display: flex;
+    }
+
+    /* FIN RESPONSIVE HEADER */
+    /* ----------------------------------------- */
+    /* RESPONSIVE SLIDER */
+    .slider {
+        display: flex;
+        background-image: url(bg1.jpg);
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        padding-top: 200px;
+        height: 200px;
+    }
+
+    .slider-text {
+        position: relative;
+        top: -160px;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    #fleche {
+        display: none;
+    }
+
+    .infos {
+        font-size: 12px;
+        position: relative;
+        left: 0;
+        top: 10px;
+    }
+
+    .slider h1 {
+        font-size: 15px;
+    }
+
+    .slider p {
+        font-size: 12px;
+    }
+
+    /* FIN RESPONSIVE SLIDER */
+    /* ----------------------------------------- */
+    /* RESPONSIVE MAIN */
+    
+    .icon-centered {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    main {
+        margin-top: 155px;
+    }
+
+    .flex-container figure {
+        flex-basis: calc(100% - 2em);
+    }
+    
+    #formulaire {
+        top: 900px;
+        margin: 1em;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        
+    }
+}
