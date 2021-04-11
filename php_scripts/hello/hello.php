@@ -1,6 +1,6 @@
 <?php
 
-function    hello($input)
+function    hello($input = "world")
 {
         echo "Hello " . $input . " !\n";
 }
